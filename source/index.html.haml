@@ -1,11 +1,18 @@
 ---
-title: Page Title
+title: Plataforma de transparencia
 ---
 
-.delete-me
+.wrapper
+  .banner
+    .container
+      .image
+        =image_tag 'banner.png'
+      .text
+        %h3 Solicita información o datos personales al gobierno
+        %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi volutpat velit ac augue lobortis, eu commodo mauris varius. Nullam et ullamcorper ligula, sit amet maximus est.
+        =link_to 'Solicita información','#', class:'button'
+        %br
+        =link_to 'Explora el Sistema Nacional de Transparencia','#'
+
   .container
-    %h1 thoughtbot Middleman Starter
-    %p
-      You're all set!
-      <a href="http://github.com/thoughtbot/proteus-middleman">Let's get started</a>
-      building your prototype.
+    hola

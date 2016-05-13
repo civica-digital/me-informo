@@ -1,0 +1,26 @@
+header{
+  padding:10px 20px;
+  background-color: #ccc;
+
+  h1{
+    float:left;
+    width: 300px;
+    line-height: 40px;
+
+  }
+  nav{
+    display: inline-block;
+
+    ul{
+      overflow: hidden;
+      li{
+        float: left;
+        padding-left: 20px;
+        a{
+          text-decoration: none;
+          line-height: 40px;
+        }
+      }
+    }
+  }
+}
