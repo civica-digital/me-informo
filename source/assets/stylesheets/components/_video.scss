@@ -1,0 +1,23 @@
+section.section-video{
+  padding:60px 0;
+  text-align: center;
+  border-bottom: 1px solid #ededed;
+
+  .video{
+    max-width: 800px;
+    margin: 40px auto;
+    .video-wrapper {
+      height: 0;
+      overflow: hidden;
+      padding-bottom: 56.25%; // For ratio 16:9. 75% if ratio is 4:3
+      position: relative;
+
+      embed,
+      object,
+      iframe {
+        @include position(absolute, 0 null null 0);
+        @include size(100%);
+      }
+    }
+  }
+}
