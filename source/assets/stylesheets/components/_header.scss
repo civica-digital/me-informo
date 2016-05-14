@@ -1,6 +1,7 @@
 header{
   padding:10px 20px;
-  background-color: #ccc;
+  background-color: $light-blue;
+  color: #ffffff;
 
   h1{
     float:left;
@@ -17,6 +18,7 @@ header{
         float: left;
         padding-left: 20px;
         a{
+          color: white;
           text-decoration: none;
           line-height: 40px;
         }
