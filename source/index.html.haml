@@ -6,8 +6,8 @@ title: Plataforma de transparencia
   .banner
     .container
       .text
-        %h3 ¡Bienvenido a la Plataforma Nacional de Transparencia!
-        %p Con esta plataforma podrá socilictar de manera sencilla<br> información pública de tu interés.
+        %h3=t(:title) 
+        %p=t(:subtitle_html) 
         =link_to 'Crear nueva solicitud de información','#', class:'button'
         %br
         =link_to 'Explora el Sistema Nacional de Transparencia','#'

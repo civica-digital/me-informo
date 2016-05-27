@@ -1,5 +1,6 @@
 activate :directory_indexes
 activate :autoprefixer
+activate :i18n, :langs => [:es]
 
 set :relative_links, true
 set :css_dir, "assets/stylesheets"
