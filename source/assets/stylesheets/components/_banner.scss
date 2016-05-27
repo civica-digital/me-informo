@@ -55,6 +55,7 @@
   overflow: hidden;
   background-color: $blue;
   padding: 20px 0;
+  font-size: 18px;
   .col{
     width: 30%;
     float: left;
@@ -71,5 +72,6 @@
   }
   p{
     color:#fff;
+    font-weight: 300;
   }
 }
