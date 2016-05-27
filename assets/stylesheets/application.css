@@ -515,6 +515,26 @@ h6 {
   font-size: 1em;
   margin: 0; }
 
+h1 {
+  color: #47525D;
+  font-weight: 400;
+  font-size: 32px; }
+
+h2 {
+  color: #47525D;
+  font-weight: 400;
+  font-size: 26px; }
+
+h3 {
+  color: #8CA0B3;
+  font-weight: 300;
+  font-size: 22px; }
+
+h4 {
+  color: #47525D;
+  font-weight: 300;
+  font-size: 22px; }
+
 p {
   margin: 0 0 0.75em; }
 
@@ -650,7 +670,8 @@ footer {
     .banner .text h3 {
       font-size: 30px;
       font-weight: 400;
-      padding-bottom: 30px; }
+      padding-bottom: 30px;
+      color: #fff; }
     .banner .text p {
       font-weight: 100;
       font-size: 26px; }
@@ -685,7 +706,9 @@ footer {
     margin-bottom: 0;
     padding-bottom: 0; }
   .banner-bottom h3 {
-    color: #8CA0B3; }
+    color: #8CA0B3;
+    font-size: 18px;
+    font-weight: 500; }
   .banner-bottom p {
     color: #fff;
     font-weight: 300; }
@@ -694,8 +717,22 @@ section.section-video {
   padding: 60px 0;
   text-align: center;
   border-bottom: 1px solid #ededed; }
+  section.section-video h4 {
+    margin-top: 40px; }
+  section.section-video ul.tutorials {
+    text-align: center;
+    margin: 20px 0; }
+    section.section-video ul.tutorials li {
+      display: inline-block;
+      margin-right: 15px;
+      border-right: 1px solid #EEF4F9;
+      padding-right: 15px; }
+      section.section-video ul.tutorials li:last-child {
+        border-right: none;
+        padding-right: 0;
+        margin-right: 0; }
   section.section-video .video {
-    max-width: 800px;
+    max-width: 600px;
     margin: 40px auto; }
     section.section-video .video .video-wrapper {
       height: 0;
@@ -713,25 +750,28 @@ section.section-video {
 
 section.section-feed {
   padding: 60px 0;
-  overflow: hidden; }
-  section.section-feed h3 {
+  overflow: hidden;
+  background-color: #EEF4F9; }
+  section.section-feed h2 {
     padding-bottom: 20px; }
   section.section-feed .events-wrapper {
     width: 48%;
     margin-right: 2%;
     float: left; }
   section.section-feed .event {
-    padding: 10px;
-    background-color: #f5f5f5;
-    margin-bottom: 10px; }
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(140, 160, 179, 0.3);
+    border-radius: 20px; }
   section.section-feed .news-wrapper {
     width: 48%;
     margin-left: 2%;
     float: right; }
   section.section-feed .new {
-    padding: 10px;
-    background-color: #f5f5f5;
-    margin-bottom: 10px; }
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(140, 160, 179, 0.3);
+    border-radius: 20px; }
 
 html {
   box-sizing: border-box; }
