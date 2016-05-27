@@ -17,6 +17,22 @@ h6 {
   margin: 0;
 }
 
+h1{
+  color: $blue;
+  font-weight: 400;
+  font-size: 32px;
+}
+h3{
+  color: $light-blue;
+  font-weight: 300;
+  font-size: 22px;
+}
+
+h4{
+  color: $blue;
+  font-weight: 300;
+  font-size: 22px;
+}
 p {
   margin: 0 0 $small-spacing;
 }

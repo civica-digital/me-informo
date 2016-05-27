@@ -29,13 +29,20 @@ title: Plataforma de transparencia
   %section.section-video
     .container
       %h1 Transparencia fácilmente.
-      %p Nunca antes había sido tan sencillo transparentar información de tu gobierno en México.
+      %h3 Nunca antes había sido tan sencillo transparentar información de tu gobierno en México.
+      %h4 Tutoriales disponibles:
+      %ul.tutorials
+        %li
+          = link_to '#' do
+            Cómo crear una solicitud de información
+            %i.fa.fa-question-circle
+        %li
+          = link_to '#' do
+            Cómo presentar una queja
+            %i.fa.fa-question-circle
       .video
         .video-wrapper
-          %iframe{:allowfullscreen => "", :frameborder => "0", :src => "http://www.youtube.com/embed/8ItNE_DX6Cc?showinfo=0&iv_load_policy=3&controls=0"}
-      .actions
-        =link_to 'Crear una solicitud de información','#'
-        =link_to 'Presentar una queja','#'
+          %iframe{:allowfullscreen => "", :frameborder => "0", :src => "https://www.youtube.com/embed/I0ynMjIhe9I?showinfo=0&iv_load_policy=3&controls=0"}
 
   %section.section-feed
     .container
