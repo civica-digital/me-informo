@@ -1,0 +1,25 @@
+---
+title: Sujetos Obligados
+---
+
+.infromation-granted
+  .text
+    %h3=t('informationgranted.title') 
+    %p=t('informationgranted.subtitle') 
+  .container
+    .row-column
+      .column-double
+        %input{:type=>"text", :required => true}
+      .column
+        %select{ :name => "question[question_status]" }
+          %option{:value => 1}= "label 1"
+          %option{:value => 2}= "label 2"    
+      .column
+        %select{ :name => "question[question_status]" }
+          %option{:value => 1}= "label 1"
+          %option{:value => 2}= "label 2" 
+%hr
+.infromation-granted
+  .text
+    %h3=t('informationgranted.title_section_two') 
+    %p=t('informationgranted.stadistic_title_html') 

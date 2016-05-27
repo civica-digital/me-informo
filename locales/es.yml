@@ -1,3 +1,8 @@
 es:
   title: "¡Bienvenido a la Plataforma Nacional de Transparencia!"
   subtitle_html: "Con esta plataforma podrá socilictar de manera sencilla<br> información pública de tu interés."
+  informationgranted:
+    title: "Búsqueda de Sujetos Obligados"
+    subtitle: "Cualquier figura que reciba y ejerza recursos públicos o realice actos de autoridad en el ámbito federal, estatal y municipal"
+    title_section_two: "Sujetos obligados en todo el país"
+    stadistic_title_html: "62% de los Sujetos Obligados NO se han unido a la plataforma"
