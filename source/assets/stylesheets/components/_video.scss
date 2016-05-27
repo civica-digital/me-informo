@@ -3,8 +3,29 @@ section.section-video{
   text-align: center;
   border-bottom: 1px solid #ededed;
 
+  h4{
+    margin-top: 40px;
+  }
+
+  ul.tutorials{
+    text-align: center;
+    margin: 20px 0;
+    li{
+      display: inline-block;
+      margin-right: 15px;
+      border-right: 1px solid $lightest-blue;
+      padding-right: 15px;
+
+      &:last-child{
+        border-right: none;
+        padding-right: 0;
+        margin-right: 0;
+      }
+    }
+  }
+
   .video{
-    max-width: 800px;
+    max-width: 600px;
     margin: 40px auto;
     .video-wrapper {
       height: 0;

@@ -1,8 +1,9 @@
 section.section-feed{
   padding:60px 0;
   overflow: hidden;
+  background-color: $lightest-blue;
 
-  h3{
+  h2{
     padding-bottom: 20px;
   }
 
@@ -12,9 +13,10 @@ section.section-feed{
     float: left;
   }
   .event{
-    padding: 10px;
-    background-color: #f5f5f5;
-    margin-bottom: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid rgba($light-blue, .3);
+    border-radius: 20px;
   }
   .news-wrapper{
     width:48%;
@@ -22,8 +24,9 @@ section.section-feed{
     float: right;
   }
   .new{
-    padding: 10px;
-    background-color: #f5f5f5;
-    margin-bottom: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid rgba($light-blue, .3);
+    border-radius: 20px;
   }
 }
