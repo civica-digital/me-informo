@@ -25,28 +25,28 @@
             %li= link_to "Estadísticas", "#"
         .col
           %h4 Contáctanos
-          = link_to "#" do
-            %i.fa.fa-facebook
-              = link_to image_tag( '/images/fb.svg'), 'http://www.facebook.com'
-          = link_to "#" do
-            %i.fa.fa-twitter
-              = link_to image_tag( '/images/tw.svg'), 'http://www.twitter.com'
-          = link_to "#" do
-            %i.fa.fa-google
-              = link_to image_tag( '/images/gg.svg'), 'http://www.google.com'
-          %br
-          = link_to "#" do
-            %i.fa.fa-envelope
-            ayuda@pnt.org.mx
-          %br
-          = link_to "#" do
-            %i.fa.fa-phone
-            55-1234-6789
+          .social
+            = link_to "#" do
+              %i.fa.fa-facebook
+            = link_to "#" do
+              %i.fa.fa-twitter
+            = link_to "#" do
+              %i.fa.fa-google
+          .contact
+            = link_to "#" do
+              %i.fa.fa-envelope
+              ayuda@pnt.org.mx
+            %br
+            = link_to "#" do
+              %i.fa.fa-phone
+              55-1234-6789
     .copyright
       .container
         %small 2016 - Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos Personales.
         %ul
-          %li= link_to "Aviso de privacidad", "#"
-          %li= link_to "Términos y condiciones", "#"
+          %li
+            %small= link_to "Aviso de privacidad", "#"
+          %li
+            %small= link_to "Términos y condiciones", "#"
 
 
