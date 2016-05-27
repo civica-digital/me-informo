@@ -1,38 +1,59 @@
 .banner{
-  background-color: $light-blue;
-  padding: 50px 0;
+  padding: 120px 0 0px 0;
   overflow: hidden;
+  background: rgba(166,178,201,1);
+  background: -moz-radial-gradient(center, ellipse cover, rgba(166,178,201,1) 38%, rgba(150,171,198,1) 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(38%, rgba(166,178,201,1)), color-stop(100%, rgba(150,171,198,1)));
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(166,178,201,1) 38%, rgba(150,171,198,1) 100%);
+  background: -o-radial-gradient(center, ellipse cover, rgba(166,178,201,1) 38%, rgba(150,171,198,1) 100%);
+  background: -ms-radial-gradient(center, ellipse cover, rgba(166,178,201,1) 38%, rgba(150,171,198,1) 100%);
+  background: radial-gradient(ellipse at center, rgba(166,178,201,1) 38%, rgba(150,171,198,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6b2c9', endColorstr='#96abc6', GradientType=1 );
 
-  .image{
-    float: left;
-    width: 30%;
-  }
   .text{
-    float: right;
-    width: 60%;
+    width: 70%;
     color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 18px;
+    background-image: url(../images/mapa-negro.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding:120px 0 40px 0;
+
 
     h3 {
-      font-size: 28px;
+      font-size: 30px;
+      font-weight: 400;
+      padding-bottom: 30px;
     }
 
     p {
-      font-weight: 300;
-      font-size: 18px;
+      font-weight: 100;
+      font-size: 26px;
     }
 
     .button{
       color: $light-blue;
       background-color: $lightest-blue;
-      margin: 20px 0;
-      padding: 15px 30px;
-      border-radius: 20px;
+      margin: 60px 0;
+      padding: 20px 40px;
+      border-radius: 30px;
+      font-size: 18px;
+      font-weight: 400;
+      transition: all .5s all;
+      &:hover{
+        background-color: #F1227A;
+        transition: all .5s all;
+        color:#fff;
+      }
     }
   }
 }
 .banner-bottom{
   overflow: hidden;
-  background-color: #ededed;
+  background-color: $blue;
   padding: 20px 0;
   .col{
     width: 30%;
@@ -44,5 +65,11 @@
     display: inline-block;
     margin-bottom: 0;
     padding-bottom: 0;
+  }
+  h3{
+    color:$light-blue;
+  }
+  p{
+    color:#fff;
   }
 }
