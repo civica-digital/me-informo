@@ -1,22 +1,27 @@
 header{
-  padding:10px 20px;
-  background-color: $light-blue;
+  padding:30px 0px;
   color: #ffffff;
+  overflow: hidden;
+  position: absolute;
+  box-sizing: border-box;
 
-  h1{
+  .logo{
     float:left;
     width: 300px;
-    line-height: 40px;
+    margin-left: 40px;
 
   }
   nav{
-    display: inline-block;
+    float: right;
+    margin-right: 20px;
 
     ul{
       overflow: hidden;
       li{
         float: left;
-        padding-left: 20px;
+        padding-left: 40px;
+        font-size: 18px;
+        font-weight: 300;
         a{
           color: white;
           text-decoration: none;
