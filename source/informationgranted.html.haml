@@ -1,43 +1,104 @@
 ---
 title: Sujetos Obligados
 ---
-
+= partial 'header_information'
 .infromation-granted
   .text
     %h3=t('informationgranted.title') 
     %p=t('informationgranted.subtitle') 
   .container
-    .row-column
+    .row-column.match-partent
       .column-double
-        %input{:type=>"text", :required => true}
-      .column
-        %select{ :name => "question[question_status]" }
-          %option{:value => 1}= "label 1"
-          %option{:value => 2}= "label 2"    
-      .column
-        %select{ :name => "question[question_status]" }
-          %option{:value => 1}= "label 1"
-          %option{:value => 2}= "label 2" 
+        %input.search{:placeholder => "Buscar", :type => "text", :required => true}
+      .column-simple.match-partent
+        .dropdown
+          %button.dropbtn ¿Dónde?
+          .dropdown-content
+            %a{:href => "#"} Lugar 1
+            %a{:href => "#"} Lugar 2
+            %a{:href => "#"} Lugar 3  
+      .column-simple
+        .dropdown
+          %button.dropbtn Sector
+          .dropdown-content
+            %a{:href => "#"} Sector 1
+            %a{:href => "#"} Sector 2
+            %a{:href => "#"} Sector 3  
 %hr
 .infromation-granted
   .text
     %h3=t('informationgranted.title_section_two') 
     %p=t('informationgranted.stadistic_title_html') 
   #progressbar
+    %span#percent-main.white-text 62%
     .div
   .container
     .row-column
-      .column-simple
-        .solid
-          hola
-      .column-simple
-        .solid
-          hola
-      .column-simple
-        .solid
-          hola
-      .column-simple
-        .solid
-          hola
-    
-
+      .column_4
+        .solid.light-blue-bg.white-text
+          2713
+          %br
+          =t('informationgranted.kpi_section_1')
+          
+      .column_4
+        .solid.light-blue-text
+          4272
+          %br
+          =t('informationgranted.kpi_section_2')
+          
+      .column_4
+        .solid.light-blue-text
+          2400
+          %br
+          =t('informationgranted.kpi_section_3')
+          
+      .column_4
+        .solid.light-blue-text
+          4300
+          %br
+          =t('informationgranted.kpi_section_4')
+          
+%hr
+.infromation-granted
+  .text
+    %h3=t('informationgranted.title_section_tree') 
+  .container
+    .row-column
+      .column_2
+        %h4=t('informationgranted.subtitle_a_section_tree') 
+        #progressbar
+          %span.white-text#percent Ejecutivo
+          .div.r8
+        #progressbar
+          %span.white-text#percent Fideicomisos y fondos públicos
+          .div.r7
+        #progressbar
+          %span.white-text#percent Sindicatos
+          .div.r6
+        #progressbar
+          %span.white-text#percent Municipios
+          .div.r5
+        #progressbar
+          %span.white-text#percent Partidos Políticos
+          .div.r4
+        .link_column
+          %small= link_to "Todos los sectores", "#"
+      .column_2
+        %h4=t('informationgranted.subtitle_b_section_tree')
+        #progressbar
+          %span.white-text#percent Federación
+          .div.r8
+        #progressbar
+          %span.white-text#percent Jalisco
+          .div.r7
+        #progressbar
+          %span.white-text#percent Nuevo León
+          .div.r6
+        #progressbar
+          %span.white-text#percent Colima
+          .div.r5
+        #progressbar
+          %span.white-text#percent Yucatán
+          .div.r4
+        .link_column
+          %small= link_to "Todos los estados", "#"

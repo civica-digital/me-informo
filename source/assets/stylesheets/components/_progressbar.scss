@@ -8,9 +8,38 @@
       margin-bottom: 30px;
     }
     
-    #progressbar > div {
+    #progressbar > div{
       background-color: #8BA0B4;
        width: 60%; /* Adjust with JavaScript */
        height: 20px;
        border-radius: 10px;
+
     }
+
+  .r8{
+      width: 90% !important; 
+    }
+   .r7{
+      width: 80%!important; 
+   }
+   .r6{
+      width: 70%!important; 
+   }
+   .r5{
+      width: 60%!important; 
+   }
+  .r4{
+      width: 50%!important; 
+   }
+  #percent-main{
+    position: relative;   
+    left: 50%;
+    float:left;
+  }
+  #percent{
+    position: relative;   
+    left: 5%;
+    float:left;
+  }
+
+   

@@ -3,9 +3,38 @@
   overflow: hidden;
   background: rgba(255,255,255,0);
 
+  input[type=text] {
+    padding: 15px 20px;
+    background-image: url(images/comment-author.gif);
+  }
+
+  .wrapper {
+    font-family:'arial', sans-serif;
+  }
+
   .solid{
-    border-style: solid;
-    width: 80%;
+    border: 3px solid $lightest-blue; 
+    width: 100%;
+    padding-bottom: 30px;
+    padding-top: 30px !important;
+  }
+
+  .match-partent{
+    width: 100%;
+    text-align: center;
+  }
+
+  .column_4{
+    width:23%;
+    float:left;
+    margin:10px;
+    text-align: center; 
+  }
+
+  .column_2{
+    width:50%;
+    float:left;
+    text-align: center; 
   }
 
   .row-column{
@@ -13,13 +42,17 @@
   }
     
   .column-double {
-    width:66%;
+    width:60%;
     float:left;
   }
     
-  .column {
-    width:33%;
+  .column-simple {
+    width:17%;
     float:left;
+  }
+
+  .link_column{
+    margin-bottom: 30px;
   }
 
   .text{
@@ -62,4 +95,3 @@
     }
   }
 }
-

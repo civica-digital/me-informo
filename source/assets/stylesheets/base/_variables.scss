@@ -42,3 +42,21 @@ $form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $l
 // Animations
 $base-duration: 150ms;
 $base-timing: ease;
+
+//Fondos
+.light-blue-bg{
+	background-color: $light-blue !important;		
+}
+
+.white-text{
+	color: white;
+}
+
+.light-blue-text{
+	color: $light-blue;
+}
+light-blue{
+	color: $light-blue;
+}
+
+
