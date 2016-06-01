@@ -1,96 +1,121 @@
 .infromation-granted{
-  padding: 0px 0 0px 0;
-  overflow: hidden;
-  background: rgba(255,255,255,0);
 
-  input[type=text] {
-    padding: 15px 20px;
-    background-image: url(images/comment-author.gif);
-  }
-
-  .wrapper {
-    font-family:'arial', sans-serif;
-  }
-
-  .solid{
-    border: 3px solid $lightest-blue; 
-    width: 100%;
-    padding-bottom: 30px;
-    padding-top: 30px !important;
-  }
-
-  .match-partent{
-    width: 100%;
+  hgroup{
+    padding-top: 50px;
     text-align: center;
-  }
 
-  .column_4{
-    width:23%;
-    float:left;
-    margin:10px;
-    text-align: center; 
-  }
-
-  .column_2{
-    width:50%;
-    float:left;
-    text-align: center; 
-  }
-
-  .row-column{
-    width:100%;
-  }
-    
-  .column-double {
-    width:60%;
-    float:left;
-  }
-    
-  .column-simple {
-    width:17%;
-    float:left;
-  }
-
-  .link_column{
-    margin-bottom: 30px;
-  }
-
-  .text{
-    width: 70%;
-    color: #000;
-    text-align: center;
-    margin: 0 auto;
-    font-size: 18px;
-    background: rgba(255,255,255,0);
-    background-size: 100%;
-    padding:60px 0 40px 0;
-
-
-    h3 {
-      font-size: 30px;
-      font-weight: 400;
-      padding-bottom: 30px;
-      color: #000;
-    }
-
-    p {
-      font-weight: 100;
-      font-size: 22px;
-    }
-
-    .button{
+    h3{
       color: $light-blue;
-      background-color: $lightest-blue;
-      margin: 60px 0;
-      padding: 20px 40px;
-      border-radius: 30px;
       font-size: 18px;
       font-weight: 400;
-      transition: all .5s all;
-      &:hover{
-        background-color: #F1227A;
-        transition: all .5s all;
-        color:#fff;
+      padding-top: 10px;
+    }
+  }
+
+  h4{
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  form{
+    padding: 50px 0;
+    overflow: hidden;
+
+    input[type=text] {
+      padding: 20px;
+      border-radius: 8px;
+      border: 1px solid $light-blue;
+      font-size: 18px;
+      font-weight: 300;
+      color: $light-blue;
+      box-shadow: none;
+      width: 58%;
+      margin-right: 2%;
+      margin-bottom: 0;
+      float: left;
+    }
+    select {
+      border-radius: 8px;
+      border: 1px solid $light-blue;
+      font-size: 16px;
+      font-weight: 300;
+      color: $light-blue;
+      box-shadow: none;
+      width: 18%;
+      margin-right: 2%;
+      margin-bottom: 0;
+      float: left;
+      background-color: #fff;
+      line-height: 60px;
+    }
+    ::-webkit-input-placeholder {
+      color: $light-blue;
+    }
+    :-moz-placeholder {
+      color: $light-blue;
+    }
+    ::-moz-placeholder {
+      color: $light-blue;
+    }
+    :-ms-input-placeholder {
+      color: $light-blue;
+    }
+  }
+  hr{
+    clear: both;
+  }
+
+  .numbers{
+    overflow: hidden;
+    display: table;
+    width: 100%;
+    padding-bottom: 40px;
+
+    .number{
+      display: table-cell;
+      width:25%;
+      height: 100%;
+
+      .number-content{
+        margin: 0 20px;
+        border: 1px solid $light-gray;
+        border-radius: 8px;
+        padding: 30px 10px;
+        text-align: center;
+        height: 100%;
+
+        h2{
+          color: $light-blue;
+          font-size: 30px;
+          line-height: 34px;
+        }
+        p{
+          font-size: 22px;
+          color: $blue;
+          font-weight: 300;
+          margin-bottom: 0;
+        }
+        &:hover{
+          background-color: $light-blue;
+          h2, p{
+            color:#fff;
+          }
+        }
+      }
+    }
+  }
+
+  .stats{
+    overflow: hidden;
+    padding-bottom: 40px;
+
+
+    .col{
+      width: 50%;
+      padding-right: 60px;
+      float: left;
+      h2{
+        margin: 30px 0;
       }
     }
   }

@@ -2,82 +2,70 @@
 title: Sujetos Obligados
 ---
 = partial 'header_information'
+
 .infromation-granted
-  .text
-    %h3=t('informationgranted.title')
-    %p=t('informationgranted.subtitle')
   .container
-    .row-column.match-partent
-      .column-double
-        %input.search{:placeholder => "Buscar", :type => "text", :required => true}
-      .column-simple.match-partent
-        .dropdown
-          %button.dropbtn ¿Dónde?
-          .dropdown-content
-            %a{:href => "#"} Lugar 1
-            %a{:href => "#"} Lugar 2
-            %a{:href => "#"} Lugar 3
-      .column-simple
-        .dropdown
-          %button.dropbtn Sector
-          .dropdown-content
-            %a{:href => "#"} Sector 1
-            %a{:href => "#"} Sector 2
-            %a{:href => "#"} Sector 3
-%hr
-.infromation-granted
-  .text
-    %h3=t('informationgranted.title_section_two')
-    %p=t('informationgranted.stadistic_title_html')
-  #progressbar
-    .div
+    %hgroup
+      %h1=t('informationgranted.title')
+      %h3=t('informationgranted.subtitle')
+
+    %form
+      %input{:placeholder => "Busca sujeto por nombre o tipo de información...", :type => "text", :required => true}
+      %select
+        %option ¿Dónde?
+        %option Lugar1
+        %option Lugar1
+      %select
+        %option Sector
+        %option Sector1
+        %option Sector1
+  %hr
   .container
-    .row-column
-      .column_4
-        .solid.light-blue-bg.white-text
-          2713
-          %br
-          =t('informationgranted.kpi_section_1')
+    %hgroup
+      %h1=t('informationgranted.title_section_two')
 
-      .column_4
-        .solid.light-blue-text
-          4272
-          %br
-          =t('informationgranted.kpi_section_2')
+    %h4=t('informationgranted.stadistic_title_html')
+    #progressbar
 
-      .column_4
-        .solid.light-blue-text
-          2400
-          %br
-          =t('informationgranted.kpi_section_3')
+    .numbers
+      .number
+        .number-content
+          %h2 2713
+          %p=t('informationgranted.kpi_section_1')
 
-      .column_4
-        .solid.light-blue-text
-          4300
-          %br
-          =t('informationgranted.kpi_section_4')
+      .number
+        .number-content
+          %h2 4272
+          %p=t('informationgranted.kpi_section_2')
 
-%hr
-.infromation-granted
-  .text
-    %h3=t('informationgranted.title_section_tree')
+      .number
+        .number-content
+          %h2 2400
+          %p=t('informationgranted.kpi_section_3')
+
+      .number
+        .number-content
+          %h2 4300
+          %p=t('informationgranted.kpi_section_4')
+
+  %hr
   .container
-    .row-column
-      .column_2
-        %h4=t('informationgranted.subtitle_a_section_tree')
-        .div#r1
-        .div#r2
-        .div#r3
-        .div#r4
-        .div#r5
-        .link_column
-          %small= link_to "Todos los sectores", "#"
-      .column_2
-        %h4=t('informationgranted.subtitle_b_section_tree')
-        .div#r6
-        .div#r7
-        .div#r8
-        .div#r9
-        .div#r10
-        .link_column
-          %small= link_to "Todos los estados", "#"
+    %hgroup
+      %h1=t('informationgranted.title_section_tree')
+    .stats
+      .col
+        %h2=t('informationgranted.subtitle_a_section_tree')
+        #r1
+        #r2
+        #r3
+        #r4
+        #r5
+        = link_to "Todos los sectores", "#"
+      .col
+        %h2=t('informationgranted.subtitle_b_section_tree')
+        #r6
+        #r7
+        #r8
+        #r9
+        #r10
+        = link_to "Todos los estados", "#"
