@@ -10,15 +10,19 @@ title: Sujetos Obligados
       %h3=t('informationgranted.subtitle')
 
     %form
-      %input{:placeholder => "Busca sujeto por nombre o tipo de información...", :type => "text", :required => true}
-      %select
-        %option ¿Dónde?
-        %option Lugar1
-        %option Lugar1
-      %select
-        %option Sector
-        %option Sector1
-        %option Sector1
+      .input
+        %input{:placeholder => "Busca sujeto por nombre o tipo de información...", :type => "text", :required => true}
+        %i.fa.fa-search
+      .select
+        %select
+          %option ¿Dónde?
+          %option Lugar1
+          %option Lugar1
+      .select
+        %select
+          %option Sector
+          %option Sector1
+          %option Sector1
   %hr
   .container
     %hgroup

@@ -20,21 +20,29 @@
   form{
     padding: 50px 0;
     overflow: hidden;
-
-    input[type=text] {
-      padding: 20px;
-      border-radius: 8px;
-      border: 1px solid $light-blue;
-      font-size: 18px;
-      font-weight: 300;
-      color: $light-blue;
-      box-shadow: none;
-      width: 58%;
-      margin-right: 2%;
-      margin-bottom: 0;
-      float: left;
-    }
-    select {
+    .input{
+      position: relative;
+      input[type=text] {
+        padding: 20px 20px 20px 50px;
+        border-radius: 8px;
+        border: 1px solid $light-blue;
+        font-size: 18px;
+        font-weight: 300;
+        color: $light-blue;
+        box-shadow: none;
+        width: 58%;
+        margin-right: 2%;
+        margin-bottom: 0;
+        float: left;
+        }
+        i{
+          position: absolute;
+          left: 20px;
+          top:25px;
+          color: $light-blue;
+        }
+      }
+    .select{
       border-radius: 8px;
       border: 1px solid $light-blue;
       font-size: 16px;
@@ -42,11 +50,18 @@
       color: $light-blue;
       box-shadow: none;
       width: 18%;
-      margin-right: 2%;
-      margin-bottom: 0;
       float: left;
       background-color: #fff;
       line-height: 60px;
+      margin-right: 2%;
+      padding: 0 10px;
+
+      select {
+        border:none;
+        margin: 20px 0;
+        background-color: #fff;
+        width: 100%;
+      }
     }
     ::-webkit-input-placeholder {
       color: $light-blue;
