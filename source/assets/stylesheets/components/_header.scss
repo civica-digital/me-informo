@@ -1,9 +1,10 @@
 header{
-  padding:30px 0px;
+  padding:30px 0px 20px 0;
   color: #ffffff;
   overflow: hidden;
-  position: absolute;
   box-sizing: border-box;
+  width: 100%;
+  background-color: $light-blue;
 
   .logo{
     float:left;
@@ -30,4 +31,8 @@ header{
       }
     }
   }
+}
+.index header{
+  position: absolute;
+  background-color: transparent;
 }

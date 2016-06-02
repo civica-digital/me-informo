@@ -9,11 +9,10 @@
 
   %body{class: page_classes}
 
-    = partial 'header'
-
     = yield
 
     = partial 'footer'
 
     = javascript_include_tag "https://code.jquery.com/jquery-2.1.1.min.js"
+    = javascript_include_tag "http://d3js.org/d3.v2.js"
     = javascript_include_tag "application"
