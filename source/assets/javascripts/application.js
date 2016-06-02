@@ -1,6 +1,7 @@
 //= require_tree .
 
-function print_bar(max_width, max_height, font_size_param, fill_bar, name, container_name){
+function print_bar(max_height, font_size_param, fill_bar, name, container_name){
+    var max_width = $(container_name).width();
     var data = [1000, fill_bar*10]; // here are the data values; v1 = total, v2 = current value
     var chart = d3.select(container_name).append("svg") // creating the svg object inside the container div
       .attr("class", "chart")
@@ -94,14 +95,14 @@ function print_bar(max_width, max_height, font_size_param, fill_bar, name, conta
   };
 
 //print_bar(Width px -int , Height px - int, fontsize-string, fill % - int, title -str, container)
-print_bar(1080, 60, "18px", 62, "","#progressbar");
-print_bar(450, 45, "12px", 65, "Sindicatos","#r1");
-print_bar(450, 45, "12px", 49, "Partido Político","#r2");
-print_bar(450, 45, "12px", 39, "Municipios","#r3");
-print_bar(450, 45, "12px", 39, "Fondos","#r4");
-print_bar(450, 45, "12px", 31, "Ejecutivo","#r5");
-print_bar(450, 45, "12px", 100, "Jalisco","#r6");
-print_bar(450, 45, "12px", 76, "Oaxaca","#r7");
-print_bar(450, 45, "12px", 71, "Puebla","#r8");
-print_bar(450, 45, "12px", 70, "Querétaro","#r9");
-print_bar(450, 45, "12px", 64, "Hidalgo","#r10");
+print_bar(60, "18px", 62, "","#progressbar");
+print_bar(45, "12px", 65, "Sindicatos","#r1");
+print_bar(45, "12px", 49, "Partido Político","#r2");
+print_bar(45, "12px", 39, "Municipios","#r3");
+print_bar(45, "12px", 39, "Fondos","#r4");
+print_bar(45, "12px", 31, "Ejecutivo","#r5");
+print_bar(45, "12px", 100, "Jalisco","#r6");
+print_bar(45, "12px", 76, "Oaxaca","#r7");
+print_bar(45, "12px", 71, "Puebla","#r8");
+print_bar(45, "12px", 70, "Querétaro","#r9");
+print_bar(45, "12px", 64, "Hidalgo","#r10");
