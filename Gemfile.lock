@@ -147,6 +147,3 @@ DEPENDENCIES
   middleman-sprockets (= 4.0.0.rc.1)
   neat (~> 1.7)
   sassc (~> 1.8)
-
-BUNDLED WITH
-   1.11.2
