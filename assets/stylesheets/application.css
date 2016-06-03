@@ -601,7 +601,7 @@ header {
 
 footer {
   background-color: #8A9CBF;
-  color: #EEF4F9; }
+  color: #F1F8FF; }
   footer .bottom {
     padding: 40px 0;
     font-size: 14px;
@@ -612,7 +612,7 @@ footer {
       font-size: 18px;
       font-weight: 400; }
     footer .bottom a {
-      color: #EEF4F9;
+      color: #F1F8FF;
       text-decoration: none;
       font-weight: 300;
       font-size: 14px;
@@ -657,9 +657,9 @@ footer {
         margin-left: 20px;
         font-size: 14px; }
         footer .copyright ul li a {
-          color: #EEF4F9;
+          color: #F1F8FF;
           text-decoration: none;
-          border-bottom: 1px solid #EEF4F9;
+          border-bottom: 1px solid #F1F8FF;
           opacity: .8; }
           footer .copyright ul li a:hover {
             opacity: 1; }
@@ -667,12 +667,12 @@ footer {
 .banner {
   padding: 120px 0 0px 0;
   overflow: hidden;
-  background: #a6b2c9;
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(38%, #a6b2c9), color-stop(100%, #96abc6));
-  background: -webkit-radial-gradient(center, ellipse cover, #a6b2c9 38%, #96abc6 100%);
-  background: -webkit-radial-gradient(center ellipse, #a6b2c9 38%, #96abc6 100%);
-  background: radial-gradient(ellipse at center, #a6b2c9 38%, #96abc6 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6b2c9', endColorstr='#96abc6', GradientType=1 ); }
+  background: #98abd4;
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(38%, #98abd4), color-stop(100%, #889ac4));
+  background: -webkit-radial-gradient(center, ellipse cover, #98abd4 38%, #889ac4 100%);
+  background: -webkit-radial-gradient(center ellipse, #98abd4 38%, #889ac4 100%);
+  background: radial-gradient(ellipse at center, #98abd4 38%, #889ac4 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#98ABD4', endColorstr='#899BC0', GradientType=1 ); }
   .banner .text {
     width: 70%;
     color: #fff;
@@ -694,7 +694,7 @@ footer {
       font-size: 26px; }
     .banner .text .button {
       color: #8A9CBF;
-      background-color: #EEF4F9;
+      background-color: #F1F8FF;
       margin: 60px 0;
       padding: 20px 40px;
       border-radius: 30px;
@@ -742,7 +742,7 @@ section.section-video {
     section.section-video ul.tutorials li {
       display: inline-block;
       margin-right: 15px;
-      border-right: 1px solid #EEF4F9;
+      border-right: 1px solid #F1F8FF;
       padding-right: 15px; }
       section.section-video ul.tutorials li:last-child {
         border-right: none;
@@ -768,18 +768,42 @@ section.section-video {
 section.section-feed {
   padding: 60px 0;
   overflow: hidden;
-  background-color: #EEF4F9; }
+  background-color: #F1F8FF; }
   section.section-feed h2 {
     padding-bottom: 20px; }
+  section.section-feed h4 {
+    color: #8A9CBF; }
+  section.section-feed p {
+    color: #47525D; }
+  section.section-feed small {
+    color: #999; }
+  section.section-feed a.text-button {
+    color: #8A9CBF;
+    padding-top: 10px;
+    float: right;
+    display: inline-block; }
   section.section-feed .events-wrapper {
     width: 48%;
     margin-right: 2%;
     float: left; }
   section.section-feed .event {
-    padding: 20px;
+    padding: 20px 140px 10px 20px;
     margin-bottom: 20px;
     border: 1px solid rgba(138, 156, 191, 0.3);
-    border-radius: 20px; }
+    border-radius: 20px;
+    position: relative; }
+    section.section-feed .event .date {
+      background-color: #8A9CBF;
+      color: #fff;
+      float: right;
+      width: 120px;
+      border-radius: 10px;
+      padding: 10px;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      text-align: center;
+      font-weight: 300; }
   section.section-feed .news-wrapper {
     width: 48%;
     margin-left: 2%;
