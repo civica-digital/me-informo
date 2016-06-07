@@ -1,4 +1,5 @@
-# Me Informo
+# Tu Plataforma Abierta
+La versión comunitaria de la Plataforma Nacional de Transparencia
 
 ## Antecedentes
 
@@ -51,7 +52,7 @@ También puedes organizar una hack night en tu ciudad o escuela. Escríbenos a e
 ## Comunicación
 
 * Utiliza el hashtag #TuPlataformaAbierta.
-* [Únete al Slack de Codeando México](http://slack.codeandomexico.org). Estaremos en el canal de #plataforma-transpren.
+* [Únete al Slack de Codeando México](http://slack.codeandomexico.org). Estaremos en el canal de #tu-plataforma-abierta.
 * Chatea con otros hackers cívicos en #codeandomexico en `irc.freenode.net`.
 * ¿Dudas? Contáctanos en [equipo@codeandomexico.org](mailto:equipo@codeandomexico.org).
 * Síguenos en redes sociales: [Facebook](http://facebook.com/CodeandoMexico), [Twitter](http://twitter.com/CodeandoMexico), o únete al grupo de la [Comunidad Codeando México](http://facebook.com/groups/370710456416676/).
