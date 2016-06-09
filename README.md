@@ -23,20 +23,34 @@ El 2 de junio, Cívica Digital [lanza una propuesta](http://blog.civica.digital/
 
 Empieza por explorar la sección de [Issues](http://github.com/CodeandoMexico/me-informo/issues) para revisar las tareas existentes o agregar una nueva propuesta.
 
+Perfiles que se pueden sumar:
+* Desarrolladores en Ruby/Ruby-on-Rails, Python, Javascript y lenguajes orientados a web
+* Diseñadores gráficos, de interface y de experiencia de usuario
+* Project managers
+* Geeks ciudadanos
+
 Necesidades puntuales del proyecto:
 
 * Crear el backend de la plataforma (de momento todo es estático).
 * Construir el API de la plataforma. [Aquí](http://github.com/civica-digital/me-informo-api) hay un API mínimo. 
 * Mejorar el diseño actual.
-* Agregar información sobre sujetos obligados, organismos garantes, etc.
+* Investigar y construir el glosario con temas como: sujetos obligados, organismos garantes, etc.
+* Documentar el proyecto.
 
-También puedes organizar una hack night en tu ciudad o escuela. Escríbenos a equipo@codeandomexico.org para que te ayudemos.
+## Eventos locales
+
+¿Quieres organizar un evento en tu ciudad, escuela y organización? Escríbenos a equipo@codeandomexico.org y te ayudamos.
+
+|Ciudad|Fecha|Hora|Lugar|Link al evento|
+|---|---|---|---|---|
+|Ciudad de México|25-jun-2016|Por definir|Por definir|Por definir|
+
 
 ### Proyectos existentes
 
 * [me-informo](http://github.com/civica-digital/me-informo): Repositorio original del proyecto creador por Cívica Digital.
 * [me-informo-api](http://github.com/civica-digital/me-informo-api): API de la Plataforma Nacional Transparencia.
-* [solicitud451](http://github.com/CodeandoMexico/solicitud451): Hagamos "bola" para solicitar información de gobierno. Un
+* [solicitud451](http://github.com/CodeandoMexico/solicitud451): Hagamos "bola" para solicitar información de gobierno. Una herramienta que permite crear solicitudes de información a Infomex.
 * [infobazooka](http://github.com/CodeandoMexico/infobazooka) 
 
 ## Referencias
@@ -48,6 +62,13 @@ También puedes organizar una hack night en tu ciudad o escuela. Escríbenos a e
 * [Desarrollo de la Plataforma Nacional de Transparencia Segunda Etapa](http://compranetfacil.com/plataforma-nacional-de-transparencia-segunda-etapa)
 * [¡Construyamos una mejor Plataforma Nacional de Transparencia!](http://blog.codeandomexico.org/2016/06/06/la-plataforma-nacional-de-transparencia-abierta/)
 * [Se Lanza Plataforma Nacional de Transparencia; Simplifica y potencia el ejercicio del derecho de acceso en todo el País.](http://inicio.ifai.org.mx/Comunicados/Comunicado%20INAI-128-16.pdf)
+* [Carta abierta al INAI sobre la Plataforma Nacional de Transparencia](https://goo.gl/jOFBwH)
+
+### En los medios
+
+* [Harán de nuevo la Plataforma Nacional de Transparencia](http://hipertextual.com/2016/06/plataforma-nacional-de-transparencia)
+* [La nueva Plataforma de Transparencia](http://www.eluniversal.com.mx/blogs/colectivo-mexico-informate/2016/06/9/la-nueva-plataforma-de-transparencia)
+* [Invitan a crear página de transparencia abierta](http://www.ntrguadalajara.com/post.php?id_nota=41408)
 
 ## Comunicación
 
