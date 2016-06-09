@@ -15,7 +15,7 @@ Aquí hay algunas formas en las que **tú** puedes contribuir:
 * reportando errores que hayas encontrado en estas versiones
 * escribiendo o editando documentación
 * escribiendo especificaciones
-* escribiendo código (**ninguna contribución es demaciado pequeña**:
+* escribiendo código (**ninguna contribución es demasiado pequeña**:
   arreglar errores ortográficos, *typos*, añadiendo comentarios,
   limpiando inconsistencias, etc.)
 * *refactoreando* código: (organizar archivos/modulos, crear interfaces,
@@ -56,6 +56,7 @@ Si es una mejora/sugerencia, argumenta el por qué.
 `༼ つ ◕_◕ ༽つ Dame tu pull requests!`
 
 Estos son los pasos para un pull request:
+
 1. [Forkea el repositorio de Codeando México.][fork]
 2. [Crea una branch con tu tópico.][branch]
 3. Agrega pruebas (si no estás acostumbrado a escribir pruebas, muy mal,
