@@ -37,6 +37,13 @@ Necesidades puntuales del proyecto:
 * Investigar y construir el glosario con temas como: sujetos obligados, organismos garantes, etc.
 * Documentar el proyecto.
 
+### Proyectos existentes
+
+* [me-informo](http://github.com/civica-digital/me-informo): Repositorio original del proyecto creador por Cívica Digital.
+* [me-informo-api](http://github.com/civica-digital/me-informo-api): API de la Plataforma Nacional Transparencia.
+* [solicitud451](http://github.com/CodeandoMexico/solicitud451): Hagamos "bola" para solicitar información de gobierno. Una herramienta que permite crear solicitudes de información a Infomex.
+* [infobazooka](http://github.com/CodeandoMexico/infobazooka) 
+
 ## Eventos locales
 
 ¿Quieres organizar un evento en tu ciudad, escuela y organización? Escríbenos a equipo@codeandomexico.org y te ayudamos.
@@ -45,13 +52,6 @@ Necesidades puntuales del proyecto:
 |---|---|---|---|---|
 |Ciudad de México|25-jun-2016|Por definir|Por definir|Por definir|
 
-
-### Proyectos existentes
-
-* [me-informo](http://github.com/civica-digital/me-informo): Repositorio original del proyecto creador por Cívica Digital.
-* [me-informo-api](http://github.com/civica-digital/me-informo-api): API de la Plataforma Nacional Transparencia.
-* [solicitud451](http://github.com/CodeandoMexico/solicitud451): Hagamos "bola" para solicitar información de gobierno. Una herramienta que permite crear solicitudes de información a Infomex.
-* [infobazooka](http://github.com/CodeandoMexico/infobazooka) 
 
 ## Referencias
 
