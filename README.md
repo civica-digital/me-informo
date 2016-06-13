@@ -50,6 +50,7 @@ Necesidades puntuales del proyecto:
 
 |Ciudad|Fecha|Hora|Lugar|Link al evento|
 |---|---|---|---|---|
+|Guadalajara|15-jun-2016|19:00|[Hacker Garage](https://hackergarage.mx/)|N/A|
 |Ciudad de México|25-jun-2016|Por definir|Por definir|Por definir|
 
 
