@@ -53,7 +53,7 @@ function print_bar(max_height, font_size_param, fill_bar, name, container_name){
           }
         })
       .attr("y", max_height*0.25) // y position of the text inside bar
-      .attr("dx", -3) // padding-right
+      .attr("dx", 5) // padding-right
       .attr("dy", ".35em") // vertical-align: middle
       .attr("text-anchor", function(d){
         if(x(d)==max_width*0.8 && fill_bar !=100){
@@ -84,7 +84,7 @@ function print_bar(max_height, font_size_param, fill_bar, name, container_name){
         chart.append("text")
           .attr("x", max_width*0.05)
           .attr("y", max_height*0.25) // y position of the text inside bar
-          .attr("dx", -3) // padding-right
+          .attr("dx", 5) // padding-right
           .attr("dy", ".35em") // vertical-align: middle
           .attr("text-anchor", "left")// text-align: right
           .attr("font-size", font_size_param)
@@ -94,15 +94,27 @@ function print_bar(max_height, font_size_param, fill_bar, name, container_name){
     return null
   };
 
-//print_bar(Width px -int , Height px - int, fontsize-string, fill % - int, title -str, container)
-print_bar(60, "18px", 62, "","#progressbar");
-print_bar(45, "12px", 65, "Sindicatos","#r1");
-print_bar(45, "12px", 49, "Partido Político","#r2");
-print_bar(45, "12px", 39, "Municipios","#r3");
-print_bar(45, "12px", 39, "Fondos","#r4");
-print_bar(45, "12px", 31, "Ejecutivo","#r5");
-print_bar(45, "12px", 100, "Jalisco","#r6");
-print_bar(45, "12px", 76, "Oaxaca","#r7");
-print_bar(45, "12px", 71, "Puebla","#r8");
-print_bar(45, "12px", 70, "Querétaro","#r9");
-print_bar(45, "12px", 64, "Hidalgo","#r10");
+function printProgressBar() {
+  //print_bar(Width px -int , Height px - int, fontsize-string, fill % - int, title -str, container)
+  print_bar(60, "18px", 62, "","#progressbar");
+  print_bar(45, "12px", 65, "Sindicatos","#r1");
+  print_bar(45, "12px", 49, "Partido Político","#r2");
+  print_bar(45, "12px", 39, "Municipios","#r3");
+  print_bar(45, "12px", 39, "Fondos","#r4");
+  print_bar(45, "12px", 31, "Ejecutivo","#r5");
+  print_bar(45, "12px", 100, "Jalisco","#r6");
+  print_bar(45, "12px", 76, "Oaxaca","#r7");
+  print_bar(45, "12px", 71, "Puebla","#r8");
+  print_bar(45, "12px", 70, "Querétaro","#r9");
+  print_bar(45, "12px", 64, "Hidalgo","#r10");
+}
+
+printProgressBar();
+
+$(window).resize(function() {
+  $('#progressbar svg').remove();
+  $('#r1 svg, #r2 svg, #r3 svg, #r4 svg, #r5 svg').remove();
+  $('#r6 svg, #r7 svg, #r8 svg, #r9 svg, #r10 svg').remove();
+
+  printProgressBar();
+});
