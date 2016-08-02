@@ -1,28 +1,39 @@
+// --------------------------------------------
+// Sass structure
+// --------------------------------------------
+
+
+// vendor
 @import "vendor/normalize";
 
-@import "bourbon";
-@import "base/base";
-@import "components/base";
-@import "scripts/base";
+// scripts
+@import "scripts/font-awesome";
 
+// bourbon
+@import "bourbon";
+
+// elements
+@import "elements/variables";
+@import "elements/typography";
+@import "elements/images";
+
+// components
+@import "components/grid-settings";
+@import "components/buttons";
+@import "components/forms";
+@import "components/lists";
+@import "components/tables";
+@import "components/header";
+@import "components/footer";
+@import "components/banner";
+@import "components/video";
+@import "components/feed";
+@import "components/progressbar";
+@import "components/dropdown";
+
+// neat
 @import "neat";
 
-@import "global";
-
-.container{
-  width: 1200px;
-  margin: 0 auto;
-
-  @media (min-width:960px) and (max-width: 1199px){
-    width: 960px; padding-left:15px; padding-right:15px;
-  }
-  @media (min-width:780px) and (max-width: 959px) {
-    width: 780px; padding-left:15px; padding-right:15px;
-  }
-  @media (min-width:640px) and (max-width: 779px) {
-    width: 640px; padding-left:10px; padding-right:10px;
-  }
-  @media (min-width:250px) and (max-width: 639px) {
-    width: 100%; padding-left:10px; padding-right:10px;
-  }
-}
+// views
+@import "views/global";
+@import "views/information-granted";
