@@ -1,10 +1,12 @@
 #progressbar {
-      border-radius: 13px; /* (height of inner div) / 2 + padding */
-      padding: 3px;
-      text-align: center;
-      margin: 30px auto;
-      clear: both;
-    }
+  border-radius: 13px; /* (height of inner div) / 2 + padding */
+  padding: 3px;
+  text-align: center;
+  margin: 30px auto;
+  clear: both;
+
+  svg { width: 82.2%; }
+}
 
   .chart rect:first-of-type {
     color: #F1F5F6;
