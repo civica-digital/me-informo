@@ -46,12 +46,14 @@ p {
 }
 
 a {
+  text-decoration: none;
   color: $action-color;
   transition: color $base-duration $base-timing;
 
   &:active,
   &:focus,
   &:hover {
+    text-decoration: underline;
     color: shade($action-color, 25%);
   }
 }
