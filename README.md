@@ -21,23 +21,11 @@ El 2 de junio, Cívica Digital [lanza una propuesta](http://blog.civica.digital/
 
 ## Cómo contribuir
 
-Empieza por explorar la sección de [Issues](http://github.com/CodeandoMexico/me-informo/issues) para revisar las tareas existentes o agregar una nueva propuesta.
 
-Perfiles que se pueden sumar:
-* Desarrolladores en Ruby/Ruby-on-Rails, Python, Javascript y lenguajes orientados a web
-* Diseñadores gráficos, de interface y de experiencia de usuario
-* Project managers
-* Geeks ciudadanos
+Checa el documento de [CONTRIBUTING](/CONTRIBUTING.md)
 
-Necesidades puntuales del proyecto:
 
-* Crear el backend de la plataforma (de momento todo es estático).
-* Construir el API de la plataforma. [Aquí](http://github.com/civica-digital/me-informo-api) hay un API mínimo. 
-* Mejorar el diseño actual.
-* Investigar y construir el glosario con temas como: sujetos obligados, organismos garantes, etc.
-* Documentar el proyecto.
-
-### Proyectos existentes
+## Proyectos existentes
 
 * [me-informo](http://github.com/civica-digital/me-informo): Repositorio original del proyecto creador por Cívica Digital.
 * [me-informo-api](http://github.com/civica-digital/me-informo-api): API de la Plataforma Nacional Transparencia.
