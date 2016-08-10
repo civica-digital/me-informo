@@ -11,7 +11,7 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#98ABD4', endColorstr='#899BC0', GradientType=1 );
 
   .text{
-    color: #fff;
+    color: $white;
     text-align: center;
     margin: 0 auto;
     font-size: 18px;
@@ -21,6 +21,15 @@
     background-position: top center;
     padding:120px 0 40px 0;
 
+    a {
+      color: $blue;
+
+      &:hover,
+      &:focus {
+        color: shade($blue, 25%);
+      }
+    }
+
     @media (max-width: 640px) { width: 100%; }
     @media (min-width: 641px) { width: 70%; }
 
@@ -28,7 +37,7 @@
       font-size: 30px;
       font-weight: 400;
       padding-bottom: 30px;
-      color: #fff;
+      color: $white;
     }
 
     p {
@@ -46,10 +55,12 @@
       font-weight: 400;
       white-space: normal;
       transition: all .5s all;
-      &:hover{
+      &:hover,
+      &:focus {
+        text-decoration: none;
         background-color: #F1227A;
         transition: all .5s all;
-        color:#fff;
+        color: $white;
       }
     }
   }
