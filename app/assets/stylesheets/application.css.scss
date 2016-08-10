@@ -4,10 +4,8 @@
 
 
 // vendor
-@import "vendor/normalize";
-
-// scripts
-@import "scripts/font-awesome";
+@import "../../../vendor/assets/stylesheets/normalize";
+@import "../../../vendor/assets/stylesheets/font-awesome";
 
 // bourbon
 @import "bourbon";
