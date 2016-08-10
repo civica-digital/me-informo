@@ -5,7 +5,8 @@
 
 // vendor
 @import "../../../vendor/assets/stylesheets/normalize";
-@import "../../../vendor/assets/stylesheets/font-awesome";
+@import "font-awesome-sprockets";
+@import "font-awesome";
 
 // bourbon
 @import "bourbon";

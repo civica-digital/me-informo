@@ -29,6 +29,8 @@ gem 'jbuilder', '~> 2.5'
 gem "neat", "~> 1.7"
 gem "bourbon", "~> 4.2"
 
+gem "font-awesome-sass"
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 gem "haml"
