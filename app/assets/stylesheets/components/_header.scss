@@ -1,37 +1,32 @@
-header{
-  padding:30px 0px 20px 0;
+header {
+  padding: 30px 0px 20px 0;
   color: $white;
   overflow: hidden;
   box-sizing: border-box;
   width: 100%;
-  background-color: $light-blue;
+  background-color: $blue;
 
-  .logo{
-    float:left;
+  .logo {
+    float: left;
     width: 300px;
     margin-left: 40px;
 
   }
-  nav{
+  nav {
+    width: auto;
     float: right;
     margin-right: 20px;
 
-    ul{
-      overflow: hidden;
-      li{
-        float: left;
-        padding-left: 40px;
-        font-size: 18px;
-        font-weight: 300;
-        a {
-          color: $white;
-          line-height: 40px;
-          &:hover,
-          &:focus {
-            text-decoration: none;
-            color: $blue;
-          }
-        }
+    a {
+      padding-left: 40px;
+      font-size: 18px;
+      font-weight: 300;
+      color: $white;
+      line-height: 40px;
+      &:hover,
+      &:focus {
+        text-decoration: none;
+        color: $blue-dark;
       }
     }
   }

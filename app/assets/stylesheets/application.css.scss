@@ -11,13 +11,24 @@
 // bourbon
 @import "bourbon";
 
+// neat
+@import "neat";
+
 // elements
 @import "elements/variables";
+
+// functions
+@import "functions/grid";
+
+// elements
+@import "elements/base";
 @import "elements/typography";
+@import "elements/form";
+@import "elements/table";
 @import "elements/images";
 
 // components
-@import "components/grid-settings";
+@import "components/grid";
 @import "components/buttons";
 @import "components/forms";
 @import "components/lists";
@@ -29,9 +40,6 @@
 @import "components/feed";
 @import "components/progressbar";
 @import "components/dropdown";
-
-// neat
-@import "neat";
 
 // views
 @import "views/global";

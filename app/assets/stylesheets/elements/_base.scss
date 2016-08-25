@@ -1,0 +1,37 @@
+// base
+// ---------------------------------------
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900);
+
+body {
+  color: $base-font-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary,
+div,
+form {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}

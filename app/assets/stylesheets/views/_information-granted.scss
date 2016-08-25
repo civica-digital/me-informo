@@ -1,110 +1,78 @@
 .infromation-granted{
 
+  .blue { color: $blue; }
+
   hgroup{
-    padding-top: 50px;
+    padding-top: 2rem;
     text-align: center;
 
     h3{
-      color: $light-blue;
+      color: $blue;
       font-size: 18px;
       font-weight: 400;
       padding-top: 10px;
     }
   }
 
-  h4{
-    margin-top: 30px;
+  h4 {
     text-align: center;
   }
 
-  form{
-    padding: 50px 0;
-    overflow: hidden;
+  form {
+    padding: 1rem 0;
     .input{
       position: relative;
+
       input[type=text] {
-        padding: 20px 20px 20px 50px;
-        border-radius: 8px;
-        border: 1px solid $light-blue;
-        font-size: 18px;
-        font-weight: 300;
-        color: $light-blue;
+        padding-left: 2.8rem;
         box-shadow: none;
-        width: 58%;
-        margin-right: 2%;
-        margin-bottom: 0;
-        float: left;
         }
-        i{
+        i {
           position: absolute;
-          left: 20px;
-          top:25px;
-          color: $light-blue;
+          left: 1rem;
+          top: 1.1rem;
+          color: $blue;
         }
       }
-    .select{
-      border-radius: 8px;
-      border: 1px solid $light-blue;
-      font-size: 16px;
-      font-weight: 300;
-      color: $light-blue;
+    .select {
       box-shadow: none;
-      width: 18%;
-      float: left;
-      background-color: #fff;
-      line-height: 60px;
-      margin-right: 2%;
-      padding: 0 10px;
 
       select {
-        border:none;
-        margin: 20px 0;
-        background-color: #fff;
         width: 100%;
       }
     }
     ::-webkit-input-placeholder {
-      color: $light-blue;
+      color: $blue;
     }
     :-moz-placeholder {
-      color: $light-blue;
+      color: $blue;
     }
     ::-moz-placeholder {
-      color: $light-blue;
+      color: $blue;
     }
     :-ms-input-placeholder {
-      color: $light-blue;
+      color: $blue;
     }
   }
-  hr{
+  hr {
     clear: both;
   }
 
-  .numbers{
-    overflow: hidden;
-    display: block;
-    width: 100%;
+  .numbers {
     padding-bottom: 40px;
 
-    .number{
-      display: block;
-      float: left;
+    .number {
       margin-bottom: 15px;
 
-      @media (min-width: 780px) { width:25%; }
-      @media (min-width: 545px) and (max-width: 779px) { width: 50%; }
-      @media (max-width: 544px) { width: 100% }
-
-      .number-content{
-        margin: 0 20px;
+      .number-content {
         border: 1px solid $light-gray;
         border-radius: 8px;
         padding: 30px 10px;
         text-align: center;
         height: 100%;
 
-        h2{
-          color: $light-blue;
+        h2 {
+          color: $blue;
           font-size: 30px;
           line-height: 34px;
         }
@@ -115,7 +83,7 @@
           margin-bottom: 0;
         }
         &:hover{
-          background-color: $light-blue;
+          background-color: $blue;
           h2, p{
             color:#fff;
           }
@@ -128,16 +96,8 @@
     overflow: hidden;
     padding-bottom: 40px;
 
-
-    .col{
-      padding-right: 60px;
-      float: left;
-
-      @media (min-width: 780px) { width: 50%; }
-      @media (max-width: 779px) { width: 100%; }
-      h2{
-        margin: 30px 0;
-      }
+    h2 {
+      margin: 2rem 0;
     }
   }
 }

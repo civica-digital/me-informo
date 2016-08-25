@@ -1,0 +1,7 @@
+// functions
+// ---------------------------------------
+
+
+@function columnSizer($column) {
+  @return ($column-size * $column) + ($gutter-size * ($column - 1));
+}

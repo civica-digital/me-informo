@@ -1,6 +1,6 @@
 .dropbtn {
     background-color: #fff;
-    color: $light-blue;
+    color: $blue;
     padding: 16px;
     font-size: 16px;
     border: none;
@@ -17,7 +17,7 @@
     z-index: 1000;
     min-width: 80%;
     margin-top: 10px;
-    border: 3px solid $light-blue; 
+    border: 3px solid $blue;
 }
 
 .dropdown-content {
@@ -25,7 +25,7 @@
     position: absolute;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1000;
-    border: 1px solid $light-blue; 
+    border: 1px solid $blue;
 }
 
 .dropdown-content a {
@@ -35,30 +35,30 @@
     display: block;
     z-index: 1000;
     background-color: #fff;
-    color: $light-blue;;
+    color: $blue;;
 }
 
 .dropdown-content a:hover {
     z-index: 1000;
-    background-color: $light-blue;
+    background-color: $blue;
     color: #fff;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
-    background-color: $light-blue;
+    background-color: $blue;
     color: #fff;
     z-index: 1000;
 }
 
 .dropdown:hover .dropbtn {
-    background-color: $light-blue;
+    background-color: $blue;
     color: #fff;
     z-index: 1000;
 }
 
 .search{
-    border: 3px solid $light-blue !important; 
+    border: 3px solid $blue !important; 
     margin-top: 10px;
     margin-bottom: 10px;
     z-index: 1000;
