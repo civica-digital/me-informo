@@ -8,69 +8,66 @@
     = stylesheet_link_tag "application"
 
   %body{:class => "#{@page_classes}"}
-    .wrapper
-      %header
-        .container
-          .logo
-            = link_to image_tag('logo-blanco.png'), '/'
-          %nav
-            %ul
-              %li= link_to 'Sistemas', '#'
-              %li= link_to 'Sujetos obligados', '/sujetos'
-              %li= link_to 'Crear solicitud', '#'
+    %header
+      .container
+        .logo
+          = link_to image_tag('logo-blanco.png'), '/'
+        %nav
+          = link_to 'Sistemas', '#'
+          = link_to 'Sujetos obligados', '/sujetos'
+          = link_to 'Crear solicitud', '#'
 
     = yield
 
-    .wrapper
-      %footer
-        .container
-          .bottom
-            .col
-              %h4 Sistemas de la Plataforma
-              %ul
-                %li= link_to "Solicitud de Acceso a la Información", "#"
-                %li= link_to "Gestión de Medios de Impugnación", "#"
-                %li= link_to "Portales de Obligaciones de Transparencia", "#"
-                %li= link_to "Comunicación entre Organismos Garantes", "#"
-            .col
-              %h4 Sujetos Obligados
-              %ul
-                %li= link_to "Federación", "#"
-                %li= link_to "Estados", "#"
-                %li= link_to "Municipios", "#"
-                %li= link_to "Sindicatos", "#"
-                %li= link_to "Partidos Políticos", "#"
-            .col
-              %h4 Conoce más
-              %ul
-                %li= link_to "Sobre la PNT", "#"
-                %li= link_to "Acerca de la Ley de Transparencia", "#"
-                %li= link_to "Estadísticas", "#"
-            .col
-              %h4 Contáctanos
-              .social
-                = link_to "#" do
-                  %i.fa.fa-facebook
-                = link_to "#" do
-                  %i.fa.fa-twitter
-                = link_to "#" do
-                  %i.fa.fa-google
-              .contact
-                = link_to "#" do
-                  %i.fa.fa-envelope
-                  ayuda@pnt.org.mx
-                %br
-                = link_to "#" do
-                  %i.fa.fa-phone
-                  55-1234-6789
-        .copyright
-          .container
-            %small 2016 - Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos Personales.
+    %footer
+      .container
+        .bottom
+          .three-columns
+            %h4 Sistemas de la Plataforma
             %ul
-              %li
-                %small= link_to "Aviso de privacidad", "#"
-              %li
-                %small= link_to "Términos y condiciones", "#"
+              %li= link_to "Solicitud de Acceso a la Información", "#"
+              %li= link_to "Gestión de Medios de Impugnación", "#"
+              %li= link_to "Portales de Obligaciones de Transparencia", "#"
+              %li= link_to "Comunicación entre Organismos Garantes", "#"
+          .three-columns
+            %h4 Sujetos Obligados
+            %ul
+              %li= link_to "Federación", "#"
+              %li= link_to "Estados", "#"
+              %li= link_to "Municipios", "#"
+              %li= link_to "Sindicatos", "#"
+              %li= link_to "Partidos Políticos", "#"
+          .three-columns
+            %h4 Conoce más
+            %ul
+              %li= link_to "Sobre la PNT", "#"
+              %li= link_to "Acerca de la Ley de Transparencia", "#"
+              %li= link_to "Estadísticas", "#"
+          .three-columns
+            %h4 Contáctanos
+            .social
+              = link_to "#" do
+                %i.fa.fa-facebook
+              = link_to "#" do
+                %i.fa.fa-twitter
+              = link_to "#" do
+                %i.fa.fa-google
+            .contact
+              = link_to "#" do
+                %i.fa.fa-envelope
+                ayuda@pnt.org.mx
+              %br
+              = link_to "#" do
+                %i.fa.fa-phone
+                55-1234-6789
+      .copyright
+        .container
+          %small 2016 - Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos Personales.
+          %ul
+            %li
+              %small= link_to "Aviso de privacidad", "#"
+            %li
+              %small= link_to "Términos y condiciones", "#"
 
 
 
