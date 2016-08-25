@@ -1,42 +1,40 @@
-section.section-feed{
-  padding:60px 0;
+section.section-feed {
+  padding: 60px 0;
   overflow: hidden;
   background-color: $lightest-blue;
 
-  h2{
+  h2 {
     padding-bottom: 20px;
   }
 
-  h4{
-      color: $light-blue;
-    }
-  p{
+  h4 {
     color: $blue;
+    font-size: 1.46rem;
+    font-weight: 300;
+    padding-bottom: 0.35rem;
   }
-  small{
+  p {
+    color: $blue-dark;
+  }
+  small {
     color: $medium-gray;
   }
-  a.text-button{
+  a.text-button {
     padding-top: 10px;
     float: right;
     display: inline-block;
   }
 
-  .events-wrapper{
-    width:48%;
-    margin-right: 2%;
-    float: left;
-  }
   .event{
     padding: 20px 140px 10px 20px;
     margin-bottom: 20px;
-    border: 1px solid rgba($light-blue, .3);
+    border: 1px solid rgba($blue, .3);
     border-radius: 20px;
     position: relative;
 
     .date{
-      background-color: $light-blue;
-      color: #fff;
+      background-color: $blue;
+      color: $white;
       float: right;
       width: 120px;
       border-radius: 10px;
@@ -48,15 +46,10 @@ section.section-feed{
       font-weight: 300;
     }
   }
-  .news-wrapper{
-    width:48%;
-    margin-left: 2%;
-    float: right;
-  }
-  .new{
+  .new {
     padding: 20px;
     margin-bottom: 20px;
-    border: 1px solid rgba($light-blue, .3);
+    border: 1px solid rgba($blue, .3);
     border-radius: 20px;
   }
 }
