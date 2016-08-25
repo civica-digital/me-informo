@@ -1,0 +1,19 @@
+// form
+// ---------------------------------------
+
+
+// form
+form {
+  margin: 1rem 0;
+
+  input[type="text"],
+  select {
+    min-width: 250px;
+    padding: 1rem;
+    color: $blue;
+    margin-bottom: 0.8rem;
+    border-radius: 6px;
+    border: 1px solid $blue;
+  }
+
+}

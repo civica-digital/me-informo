@@ -1,13 +1,7 @@
 // typhography
 // ---------------------------------------
 
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900);
-body {
-  color: $base-font-color;
-  font-family: $base-font-family;
-  font-size: $base-font-size;
-  line-height: $base-line-height;
-}
+// Headers
 
 h1,
 h2,
@@ -15,35 +9,63 @@ h3,
 h4,
 h5,
 h6 {
+  color: $header-color;
+  font-size: 0.875rem;
+  font-weight: 400;
   font-family: $heading-font-family;
   font-size: $base-font-size;
-  margin: 0;
 }
 
-h1{
+h1 { font-size: 2.063rem; }
+h2 { font-size: 1.75rem; }
+h3 { font-size: 1.375rem; }
+h4 { font-size: 1.25rem; }
+h5 { font-size: 1rem; }
+
+.slim-header { font-weight: 300; }
+.slim-header-blue {
+  @extend .slim-header;
   color: $blue;
-  font-weight: 400;
-  font-size: 32px;
-}
-h2{
-  color: $blue;
-  font-weight: 400;
-  font-size: 26px;
-}
-h3{
-  color: $light-blue;
-  font-weight: 300;
-  font-size: 22px;
 }
 
-h4{
-  color: $blue;
-  font-weight: 300;
-  font-size: 22px;
-}
+
+// Text
+
 p {
   margin: 0 0 $small-spacing;
 }
+
+small { font-size: 0.7rem; }
+
+address {
+  font-style: normal;
+}
+
+blockquote {
+  //
+}
+
+hr {
+  border-bottom: $base-border;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin: $base-spacing 0;
+}
+
+
+// Lists
+
+ul {
+  padding-left: 15px;
+
+  li {
+    padding: 7px 0;
+  }
+}
+
+
+// Links
 
 a {
   text-decoration: none;
@@ -56,18 +78,4 @@ a {
     text-decoration: underline;
     color: shade($action-color, 25%);
   }
-}
-
-hr {
-  border-bottom: $base-border;
-  border-left: 0;
-  border-right: 0;
-  border-top: 0;
-  margin: $base-spacing 0;
-}
-
-img,
-picture {
-  margin: 0;
-  max-width: 100%;
 }

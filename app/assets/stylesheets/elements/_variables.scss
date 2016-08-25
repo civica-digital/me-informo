@@ -2,66 +2,71 @@
 // ---------------------------------------
 
 
-// Typography
-$base-font-family: "Roboto", sans-serif;
-$heading-font-family: $base-font-family;
+// Colors
+$white: #fff;
+$dark: #000;
+$blue: #8a9cbf;
+$blue-dark: #47525d;
+$lightest-blue: #f1f8ff;
+$gray: #a0aec1;
+$dark-gray: #333;
+$medium-gray: #999;
+$light-gray: #ddd;
+$pink: #f1227a;
 
-// Font Sizes
-$base-font-size: 1em;
+$base-font-color: $blue-dark;
+$action-color: $blue;
+$header-color: $blue-dark;
+$base-border-color: $gray;
+$base-border: 1px solid $base-border-color;
+$base-background-color: $white;
+$secondary-background-color: tint($base-border-color, 75%);
 
-// Line height
+
+// Sizes
+$base-size: 16px;
+$base-font-size: $base-size;
 $base-line-height: 1.5;
 $heading-line-height: 1.2;
-
-// Other Sizes
 $base-border-radius: 3px;
 $base-spacing: $base-line-height * 1em;
 $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
-// Colors
-$white: #fff;
-$blue: #47525D;
-$light-blue: #8A9CBF;
-$lightest-blue: #F1F8FF;
-$dark-gray: #333;
-$medium-gray: #999;
-$light-gray: #ddd;
+$grid-columns: 12 !default;
+$max-width: 1200px !default;
+$border-box-sizing: true !default;
+$column-size: 6.195%;
+$gutter-size: 2.323%;
 
-// Font Colors
-$base-font-color: $dark-gray;
-$action-color: $light-blue;
 
-// Border
-$base-border-color: $light-gray;
-$base-border: 1px solid $base-border-color;
+// Typography
+$base-font-family: "Roboto", Helvetica, sans-serif;
+$heading-font-family: $base-font-family;
 
-// Background Colors
-$base-background-color: $white;
-$secondary-background-color: tint($base-border-color, 75%);
 
 // Forms
 $form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
 $form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
 
+
 // Animations
 $base-duration: 150ms;
 $base-timing: ease;
 
+
 //Fondos
 .light-blue-bg{
-	background-color: $light-blue !important;
+	background-color: $blue !important;
 }
 
 .white-text{
-	color: white;
+	color: $white;
 }
 
 .light-blue-text{
-	color: $light-blue;
+	color: $blue;
 }
-light-blue{
-	color: $light-blue;
+.light-blue{
+	color: $blue;
 }
-
-
