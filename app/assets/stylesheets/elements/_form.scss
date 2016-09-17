@@ -1,4 +1,4 @@
-// form
+// form element
 // ---------------------------------------
 
 
@@ -6,14 +6,90 @@
 form {
   margin: 1rem 0;
 
-  input[type="text"],
-  select {
-    min-width: 250px;
-    padding: 1rem;
+  ::-webkit-input-placeholder {
     color: $blue;
-    margin-bottom: 0.8rem;
-    border-radius: 6px;
-    border: 1px solid $blue;
+  }
+  ::-moz-placeholder {
+    color: $blue;
+  }
+  ::-ms-input-placeholder {
+    color: $blue;
+  }
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: $small-spacing / 2;
+}
+
+#{$all-text-inputs},
+select {
+  width: 100%;
+  padding: 1rem;
+  color: $blue;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  margin-bottom: 0.8rem;
+  border-radius: 6px;
+  border: 1px solid $blue;
+  background-color: $base-background-color;
+  box-shadow: none;
+  @include transition(all $base-duration $base-timing);
+
+  &:focus,
+  &:active {
+    border: 1px solid $current-input-border;
+    background-color: $current-input-bkg;
+    box-shadow: none;
+    outline: none;
   }
 
+  &:disabled {
+    background-color: shade($base-background-color, 5%);
+    cursor: not-allowed;
+  }
+}
+
+[type="search"] {
+  appearance: none;
+}
+
+[type="checkbox"],
+[type="radio"] {
+  display: inline;
+  margin-right: $small-spacing / 2;
+}
+
+[type="file"] {
+  margin-bottom: $small-spacing;
+  width: 100%;
+}
+
+textarea {
+  resize: vertical;
+}
+
+select {
+  width: auto;
+  margin-bottom: $base-spacing;
+  max-width: 100%;
+  appearance: none;
+  -o-appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: url('./arrow-down.png') no-repeat 94% 50%;
+}
+
+fieldset {
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+legend {
+  font-weight: 600;
+  margin-bottom: $small-spacing / 2;
+  padding: 0;
 }

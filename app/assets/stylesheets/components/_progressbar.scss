@@ -9,23 +9,23 @@
 }
 
   .chart rect:first-of-type {
-    color: #F1F5F6;
-    stroke: #F1F5F6;
-    fill: #F1F5F6;
+    color: $chart-color;
+    stroke: $chart-color;
+    fill: $chart-color;
   }
 
   text:first-of-type {
-    fill: #F1F5F6;
+    fill: $chart-color;
     font-family: 'Roboto';
   }
 
   .chart rect:nth-of-type(2) {
-    color: #8A9CBF;
+    color: $blue;
     stroke: transparent;
-    fill: #8A9CBF;
+    fill: $blue;
   }
 
   text:nth-of-type(2) {
-    fill: #fff;
+    fill: $white;
     font-family: 'Roboto';
   }
