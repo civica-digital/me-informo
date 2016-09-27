@@ -1,0 +1,47 @@
+// demand
+// ---------------------------------------
+
+.demand {
+  form {
+    .question {
+      margin-bottom: 1.7rem;
+
+      > label {
+        margin-bottom: 1rem;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .input-inline {
+    width: 100%;
+  }
+
+  @media (min-width: 1200px) {
+    .input-inline {
+      input {
+        width: 55%;
+      }
+    }
+
+    select { width: 30%; }
+  }
+
+  @media (min-width: 900px) and (max-width: 1199px) {
+    .input-inline {
+      input {
+        width: 70%;
+      }
+    }
+
+    select { width: 50%; }
+  }
+
+  @media (min-width: 400px) and (max-width: 899px) {
+    select { width: 60%; }
+  }
+
+  @media (max-width: 399px) {
+    select { width: 100%; }
+  }
+}
