@@ -19,7 +19,7 @@
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: top center;
-    padding:120px 0 40px 0;
+    padding: 120px 0 40px 0;
 
     a {
       color: $blue-dark;
@@ -55,6 +55,8 @@
       font-weight: 400;
       white-space: normal;
       transition: all .5s all;
+      @include transition(all $base-duration $base-timing);
+
       &:hover,
       &:focus {
         text-decoration: none;
