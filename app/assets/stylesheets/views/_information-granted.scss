@@ -2,16 +2,8 @@
 
   .blue { color: $blue; }
 
-  hgroup{
-    padding-top: 2rem;
-    text-align: center;
-
-    h3{
-      color: $blue;
-      font-size: 18px;
-      font-weight: 400;
-      padding-top: 10px;
-    }
+  hgroup {
+    h5 { color: $blue; }
   }
 
   h4 {

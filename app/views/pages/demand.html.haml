@@ -1,0 +1,167 @@
+.container.demand
+  %hgroup.principal-header
+    %h1 Nueva solicitud de información
+    %h5
+      Pedimos tus datos para poder enviar respuesta sobre tu solicitud, revisa nuestro
+      =link_to 'aviso de privacidad', '#'
+
+  .eight-columns.centered
+    %form
+      .question
+        .input-inline
+          %input{type: 'text', placeholder: 'Nombre completo o pseudónimo'}
+        .input-inline
+          %input{type: 'text', placeholder: 'Correo electrónico'}
+
+      .question
+        %label
+          ¿A qué nivel de gobierno quieres pedirle información?
+        .radio
+          %label
+            %input{type: 'radio', name: 'goverment_level', checked: 'checked'}
+            %i.radio-icon
+            %span Federal
+        .radio
+          %label
+            %input{type: 'radio', name: 'goverment_level'}
+            %i.radio-icon
+            %span Estatal
+        .radio
+          %label
+            %input{type: 'radio', name: 'goverment_level'}
+            %i.radio-icon
+            %span Municipal
+
+      .question
+        %label
+          ¿A qué estado y municipio quieres pedirle información?
+        .select
+          %select
+            %option Estado
+            %option Colima
+            %option México
+        .select
+          %select
+            %option Municipio
+            %option Colima
+            %option Tecomán
+
+      .question
+        %label
+          ¿A qué entidad quieres pedirle información?
+        .radio
+          %label
+            %input{type: 'radio', name: 'entities', checked: 'checked'}
+            %i.radio-icon
+            %span Ejecitivo
+        .radio
+          %label
+            %input{type: 'radio', name: 'entities'}
+            %i.radio-icon
+            %span Fideicomisos y fondos públicos
+        .radio
+          %label
+            %input{type: 'radio', name: 'entities'}
+            %i.radio-icon
+            %span Judicial
+        .radio
+          %label
+            %input{type: 'radio', name: 'entities'}
+            %i.radio-icon
+            %span Legislativo
+        .radio
+          %label
+            %input{type: 'radio', name: 'entities'}
+            %i.radio-icon
+            %span Municipios
+        .radio
+          %label
+            %input{type: 'radio', name: 'entities'}
+            %i.radio-icon
+            %span Partidos políticos
+        .radio
+          %label
+            %input{type: 'radio', name: 'entities'}
+            %i.radio-icon
+            %span Sindicatos
+        .radio
+          %label
+            %input{type: 'radio', name: 'entities'}
+            %i.radio-icon
+            %span Órganos autónomos
+
+      .question
+        %label Elige uno o varios sujetos a quienes pedirles información
+        .input-inline
+          %textarea{type: 'text'}
+
+      .question
+        %label Solicitud de información
+        =link_to 'Mira nuestro video tutorial para que pidas información como la necesitas', '#'
+        .input-inline
+          %textarea{type: 'text'}
+
+      .question
+        %label Datos que faciliten la búsqueda y eventual localización de la información (opcional):
+        =link_to 'Mira nuestro video tutorial para que escribas los datos necesarios', '#'
+        .input-inline
+          %textarea{type: 'text'}
+
+      .question.text-centered
+        %button.big-button{type: 'button'} Adjuntar archivo
+
+      .question
+        %label
+          ¿Cómo quieres recibir las notificaciones sobre tu solicitud?
+        .radio
+          %label
+            %input{type: 'radio', name: 'status_request', checked: 'checked'}
+            %i.radio-icon
+            %span Acudir a la unidad de transparencia
+        .radio
+          %label
+            %input{type: 'radio', name: 'status_request'}
+            %i.radio-icon
+            %span Estrados de la unidad de transparencia
+        .radio
+          %label
+            %input{type: 'radio', name: 'status_request'}
+            %i.radio-icon
+            %span Correo
+        .radio
+          %label
+            %input{type: 'radio', name: 'status_request'}
+            %i.radio-icon
+            %span Domicilio
+
+      .question
+        %label
+          ¿Cómo quieres recibir la información resultante de tu solicitud?
+        .radio
+          %label
+            %input{type: 'radio', name: 'result_request', checked: 'checked'}
+            %i.radio-icon
+            %span Electrónico através del sistema de PNT
+        .radio
+          %label
+            %input{type: 'radio', name: 'result_request'}
+            %i.radio-icon
+            %span Copia simple (con costo)
+        .radio
+          %label
+            %input{type: 'radio', name: 'result_request'}
+            %i.radio-icon
+            %span Copia certificada (con costo)
+        .radio
+          %label
+            %input{type: 'radio', name: 'result_request'}
+            %i.radio-icon
+            %span Consultas directas
+        .radio
+          %label
+            %input{type: 'radio', name: 'result_request'}
+            %i.radio-icon
+            %span Cualquier otro medio
+
+      .question.text-centered
+        %button.big-button{type: 'submit'} Enviar solicitud

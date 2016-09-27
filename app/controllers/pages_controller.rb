@@ -5,4 +5,6 @@ class PagesController < ApplicationController
   def informationgranted
     @page_classes = "informationgranted informationgranted_index"
   end
+  def demand
+  end
 end

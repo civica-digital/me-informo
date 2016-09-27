@@ -1,13 +1,5 @@
-@import "neat-helpers"; // or "../neat/neat-helpers" when not in Rails
-
-// Neat Overrides
-// $column: 90px;
-// $gutter: 30px;
-// $grid-columns: 12;
-// $max-width: 1200px;
-
-// Neat Breakpoints
-
+// grid
+// ---------------------------------------
 
 [class*="-column"] {
   float: left;
@@ -15,19 +7,6 @@
 
 .container{
   margin: 0 auto;
-
-  //@media (min-width:960px) and (max-width: 1199px){
-  //  width: 960px; padding-left:15px; padding-right:15px;
-  //}
-  //@media (min-width:780px) and (max-width: 959px) {
-  //  width: 780px; padding-left:15px; padding-right:15px;
-  //}
-  //@media (min-width:640px) and (max-width: 779px) {
-  //  width: 640px; padding-left:10px; padding-right:10px;
-  //}
-  //@media (min-width:250px) and (max-width: 639px) {
-  //  width: 100%; padding-left:10px; padding-right:10px;
-  //}
 
   @media (min-width: 768px) {
     [class*="-column"] {
@@ -50,6 +29,18 @@
     .ten-columns { width: columnSizer(10); }
     .eleven-columns { width: columnSizer(11); }
     .twelve-columns { width: columnSizer(12); }
+
+    .one-column.centered { margin: 0 columnCentered(1); }
+    .two-columns.centered { margin: 0 columnCentered(2); }
+    .three-columns.centered { margin: 0 columnCentered(3); }
+    .four-columns.centered { margin: 0 columnCentered(4); }
+    .five-columns.centered { margin: 0 columnCentered(5); }
+    .six-columns.centered { margin: 0 columnCentered(6); }
+    .seven-columns.centered { margin: 0 columnCentered(7); }
+    .eight-columns.centered { margin: 0 columnCentered(8); }
+    .nine-columns.centered { margin: 0 columnCentered(9); }
+    .ten-columns.centered { margin: 0 columnCentered(10); }
+    .eleven-columns.centered { margin: 0 columnCentered(11); }
   }
 
   @media (min-width: 1200px) {
