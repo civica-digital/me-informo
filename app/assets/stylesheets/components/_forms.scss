@@ -16,6 +16,24 @@
   }
 }
 
+.inputfile {
+  input {
+    width: 0;
+    height: 0;
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+
+  label {
+    @extend button;
+
+    &.big-button {
+      @extend .big-button;
+    }
+  }
+}
+
 .radio {
   label {
     display: inline-block;
