@@ -91,12 +91,12 @@
             %span Órganos autónomos
 
       .question
-        %label Elige uno o varios sujetos a quienes pedirles información
+        %label Elige uno o varios sujetos a quienes pedirles información:
         .input-inline
           %textarea{type: 'text'}
 
       .question
-        %label Solicitud de información
+        %label Solicitud de información:
         =link_to 'Mira nuestro video tutorial para que pidas información como la necesitas', '#'
         .input-inline
           %textarea{type: 'text'}
@@ -108,7 +108,9 @@
           %textarea{type: 'text'}
 
       .question.text-centered
-        %button.big-button{type: 'button'} Adjuntar archivo
+        .inputfile
+          %input{type: 'file'}
+          %label.big-button Adjuntar archivo
 
       .question
         %label

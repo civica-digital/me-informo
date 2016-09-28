@@ -79,11 +79,8 @@ select {
   width: auto;
   margin-bottom: $base-spacing;
   max-width: 100%;
-  appearance: none;
-  -o-appearance: none;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  background: url('./arrow-down.png') no-repeat 94% 50%;
+  @include appearance(none);
+  background: image-url('arrow-down.png') no-repeat 94% 50%;
 }
 
 fieldset {
