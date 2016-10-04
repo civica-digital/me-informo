@@ -5,30 +5,6 @@ header {
   box-sizing: border-box;
   width: 100%;
   background-color: $blue;
-
-  .logo {
-    float: left;
-    width: 300px;
-
-  }
-  nav {
-    width: auto;
-    float: right;
-    margin-right: 20px;
-
-    a {
-      padding-left: 40px;
-      font-size: 18px;
-      font-weight: 300;
-      color: $white;
-      line-height: 40px;
-      &:hover,
-      &:focus {
-        text-decoration: none;
-        color: $blue-dark;
-      }
-    }
-  }
 }
 .index header{
   position: absolute;
