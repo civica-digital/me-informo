@@ -8,10 +8,14 @@
     = stylesheet_link_tag "application"
 
   %body{:class => "#{@page_classes}"}
-    %header
+    %header#principal-menu.navigation
       .container
-        .logo
+        .navigation-header
           = link_to image_tag('logo-blanco.png'), '/'
+          .toggle
+            %span
+            %span
+            %span
         %nav
           = link_to 'Sistemas', '#'
           = link_to 'Sujetos obligados', '/sujetos'
