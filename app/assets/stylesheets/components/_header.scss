@@ -1,0 +1,23 @@
+header {
+  padding: 20px 0px 20px 0;
+  color: $white;
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: $blue;
+}
+.index header{
+  position: absolute;
+  background-color: transparent;
+}
+
+.principal-header {
+  padding: 2rem 0;
+  text-align: center;
+
+  h1 { margin-bottom: 0; }
+
+  h5 {
+    font-size: 18px;
+  }
+}

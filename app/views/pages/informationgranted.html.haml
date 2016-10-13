@@ -1,0 +1,73 @@
+.infromation-granted
+  .container
+    %hgroup.principal-header
+      %h1 B&uacute;squeda de Sujetos Obligados
+      %h5 Cualquier figura que reciba y ejerza recursos p&uacute;blicos o realice actos de autoridad en el &aacute;mbito federal, estatal y municipal
+
+    %form
+      .six-columns
+        .input-icon-left
+          %input{:placeholder => "Busca sujeto por nombre o tipo de información...", :type => "text", :required => true}
+          %i.fa.fa-search
+      .three-columns.select
+        %select
+          %option ¿Dónde?
+          %option Lugar1
+          %option Lugar1
+      .three-columns.select
+        %select
+          %option Sector
+          %option Sector1
+          %option Sector1
+  %hr
+  .container
+    %hgroup
+      %h1 Sujetos obligados en todo el pa&iacute;s
+
+    %h4
+      %strong.blue 62%
+      de los Sujetos Obligados <b>NO</b> se han unido a la plataforma
+    #progressbar
+
+    .numbers
+      .three-columns.number
+        .number-content
+          %h2 2713
+          %p Pendientes de unirse
+
+      .three-columns.number
+        .number-content
+          %h2 4272
+          %p Sujetos obligados
+
+      .three-columns.number
+        .number-content
+          %h2 2400
+          %p en la Federaci&oacute;n
+
+      .three-columns.number
+        .number-content
+          %h2 4300
+          %p en Estados y Municipios
+
+  %hr
+  .container
+    %hgroup
+      %h1 Estad&iacute;sticas de Sujetos Obligados
+    .stats
+      .six-columns
+        %h2 Sector con mayor avance
+        #r1
+        #r2
+        #r3
+        #r4
+        #r5
+        = link_to "Todos los sectores", "#"
+      .six-columns
+        %h2 Estados con mayor avance
+        #r6
+        #r7
+        #r8
+        #r9
+        #r10
+        = link_to "Todos los estados", "#"

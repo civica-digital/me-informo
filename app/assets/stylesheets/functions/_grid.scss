@@ -1,0 +1,13 @@
+// functions
+// ---------------------------------------
+
+
+@function columnSizer($column) {
+  @return ($column-size * $column) + ($gutter-size * ($column - 1));
+}
+
+@function columnCentered($column) {
+  $size-column: columnSizer($column);
+
+  @return (100% - $size-column) / 2;
+}

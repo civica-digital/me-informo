@@ -1,0 +1,71 @@
+!!!
+%html
+  %head
+    %meta{charset: "utf-8"}
+    %meta{content: "IE=edge,chrome=1", http: {equiv: "X-UA-Compatible"}}
+    %meta{name: "viewport", content: "width=device-width, initial-scale=1"}
+    %title Plataforma Nacional de Transparencia
+    = stylesheet_link_tag "application"
+
+  %body{:class => "#{@page_classes}"}
+    %header#principal-menu.navigation
+      .container
+        .navigation-header
+          = link_to image_tag('logo-blanco.png'), '/'
+          .toggle
+            %span
+            %span
+            %span
+        %nav
+          = link_to 'Sistemas', '#'
+          = link_to 'Sujetos obligados', '/sujetos'
+          = link_to 'Crear solicitud', '/solicitud'
+
+    = yield
+
+    %footer
+      .container
+        .bottom
+          .three-columns
+            %h4 Sistemas de la Plataforma
+            %ul
+              %li= link_to "Solicitud de Acceso a la Información", "#"
+              %li= link_to "Gestión de Medios de Impugnación", "#"
+              %li= link_to "Portales de Obligaciones de Transparencia", "#"
+              %li= link_to "Comunicación entre Organismos Garantes", "#"
+          .three-columns
+            %h4 Sujetos Obligados
+            %ul
+              %li= link_to "Federación", "#"
+              %li= link_to "Estados", "#"
+              %li= link_to "Municipios", "#"
+              %li= link_to "Sindicatos", "#"
+              %li= link_to "Partidos Políticos", "#"
+          .three-columns
+            %h4 Conoce más
+            %ul
+              %li= link_to "Sobre la PNT", "#"
+              %li= link_to "Acerca de la Ley de Transparencia", "#"
+              %li= link_to "Estadísticas", "#"
+          .three-columns
+            %h4 Contáctanos
+            .social
+              = link_to "http://github.com/CodeandoMexico/tu-plataforma-abierta", target: "_blank" do
+                %i.fa.fa-github-alt
+      .copyright
+        .container
+          %small 2016 - Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos Personales.
+          %ul
+            %li
+              %small= link_to "Aviso de privacidad", "#"
+            %li
+              %small= link_to "Términos y condiciones", "#"
+
+
+
+    / = partial 'olark'
+
+    = javascript_include_tag "https://code.jquery.com/jquery-2.1.1.min.js"
+    = javascript_include_tag "http://d3js.org/d3.v2.js"
+    = javascript_include_tag "application"
+    / = google_analytics_tag

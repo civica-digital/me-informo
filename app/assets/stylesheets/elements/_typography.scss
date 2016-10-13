@@ -1,0 +1,81 @@
+// typhography
+// ---------------------------------------
+
+// Headers
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $header-color;
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-family: $heading-font-family;
+  font-size: $base-font-size;
+}
+
+h1 { font-size: 2.063rem; }
+h2 { font-size: 1.75rem; }
+h3 { font-size: 1.375rem; }
+h4 { font-size: 1.25rem; }
+h5 { font-size: 1rem; }
+
+.slim-header { font-weight: 300; }
+.slim-header-blue {
+  @extend .slim-header;
+  color: $blue;
+}
+
+
+// Text
+
+p {
+  margin: 0 0 $small-spacing;
+}
+
+small { font-size: 0.7rem; }
+
+address {
+  font-style: normal;
+}
+
+blockquote {
+  //
+}
+
+hr {
+  border-bottom: $base-border;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin: $base-spacing 0;
+}
+
+
+// Lists
+
+ul {
+  padding-left: 15px;
+
+  li {
+    padding: 7px 0;
+  }
+}
+
+
+// Links
+
+a {
+  text-decoration: none;
+  color: $action-color;
+  @include transition(all $base-duration $base-timing);
+
+  &:active,
+  &:focus,
+  &:hover {
+    text-decoration: underline;
+    color: shade($action-color, 25%);
+  }
+}

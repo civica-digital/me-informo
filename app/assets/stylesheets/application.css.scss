@@ -1,0 +1,50 @@
+// --------------------------------------------
+// Sass structure
+// --------------------------------------------
+
+
+// vendor
+@import "../../../vendor/assets/stylesheets/normalize";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+// bourbon
+@import "bourbon";
+
+// neat
+@import "neat";
+
+// elements
+@import "elements/variables";
+
+// functions
+@import "functions/grid";
+
+// elements
+@import "elements/base";
+@import "elements/typography";
+@import "elements/form";
+@import "elements/buttons";
+@import "elements/table";
+@import "elements/images";
+@import "elements/utilities";
+
+// components
+@import "components/grid";
+@import "components/buttons";
+@import "components/forms";
+@import "components/lists";
+@import "components/tables";
+@import "components/header";
+@import "components/navigation";
+@import "components/footer";
+@import "components/banner";
+@import "components/video";
+@import "components/feed";
+@import "components/progressbar";
+@import "components/dropdown";
+
+// views
+@import "views/global";
+@import "views/information-granted";
+@import "views/demand";
