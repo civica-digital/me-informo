@@ -1,0 +1,67 @@
+// grid
+// ---------------------------------------
+
+[class*="-column"] {
+  float: left;
+}
+
+.container{
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    [class*="-column"] {
+      margin-right: $gutter-size;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    .one-column { width: $column-size; }
+    .two-columns { width: columnSizer(2); }
+    .three-columns { width: columnSizer(3); }
+    .four-columns { width: columnSizer(4); }
+    .five-columns { width: columnSizer(5); }
+    .six-columns { width: columnSizer(6); }
+    .seven-columns { width: columnSizer(7); }
+    .eight-columns { width: columnSizer(8); }
+    .nine-columns { width: columnSizer(9); }
+    .ten-columns { width: columnSizer(10); }
+    .eleven-columns { width: columnSizer(11); }
+    .twelve-columns { width: columnSizer(12); }
+
+    .one-column.centered { margin: 0 columnCentered(1); }
+    .two-columns.centered { margin: 0 columnCentered(2); }
+    .three-columns.centered { margin: 0 columnCentered(3); }
+    .four-columns.centered { margin: 0 columnCentered(4); }
+    .five-columns.centered { margin: 0 columnCentered(5); }
+    .six-columns.centered { margin: 0 columnCentered(6); }
+    .seven-columns.centered { margin: 0 columnCentered(7); }
+    .eight-columns.centered { margin: 0 columnCentered(8); }
+    .nine-columns.centered { margin: 0 columnCentered(9); }
+    .ten-columns.centered { margin: 0 columnCentered(10); }
+    .eleven-columns.centered { margin: 0 columnCentered(11); }
+  }
+
+  @media (min-width: 1200px) {
+    width: $max-width;
+  }
+
+  @media (min-width: 900px) and (max-width: 1199px) {
+    width: 870px;
+  }
+
+  @media (min-width: 768px) and (max-width: 899px) {
+    width: 738px;;
+  }
+
+  @media (max-width: 767px) {
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    [class*="-column"] {
+      margin: 0;
+    }
+  }
+}
